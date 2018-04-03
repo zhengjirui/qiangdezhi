@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:clipToPadding="true"
+        android:fitsSystemWindows="true"
+        android:id="@+id/iv_noNet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:src="@drawable/no_net"/>
+
+    <ImageView
+        android:visibility="gone"
+        android:clipToPadding="true"
+        android:fitsSystemWindows="true"
+        android:scaleType="fitXY"
+        android:id="@+id/iv_applyAgent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <ImageView
+        android:layout_marginTop="20dp"
+        android:clipToPadding="true"
+        android:fitsSystemWindows="true"
+        android:id="@+id/web_back"
+        style="@style/Button_Style_0"
+        android:scaleType="center"
+        android:visibility="gone"
+        android:src="@drawable/icon_fanhui_w" />
+    <ImageView
+        android:scaleType="fitCenter"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/content_agency"/>
+
+    <ImageView
+        android:id="@+id/iv_agent_back"
+        style="@style/Button_Style_0"
+        android:clipToPadding="true"
+        android:fitsSystemWindows="true"
+        android:scaleType="center"
+        android:src="@drawable/bg_fanhui" />
+
+</FrameLayout>

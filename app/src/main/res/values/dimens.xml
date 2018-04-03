@@ -1,0 +1,8 @@
+<resources>
+    <dimen name="myCenter_text15sp">15sp</dimen>
+    <dimen name="payStyle_text17sp">17sp</dimen>
+
+    <dimen name="textandiconmargin">10dp</dimen>
+    <dimen name="progress_bar_size">20dp</dimen>
+    <dimen name="space">10dp</dimen>
+</resources>

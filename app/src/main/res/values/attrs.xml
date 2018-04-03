@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+   <!-- 圆形图片样式-->
+    <declare-styleable name="CircleImageView">
+        <attr name="border_width" format="dimension" />
+        <attr name="border_color" format="color" />
+    </declare-styleable>
+    <!--自动滚动文字样式-->
+    <declare-styleable name="auto3d">
+        <attr name="textSize" format="dimension" />
+    </declare-styleable>
+    <!--布局星星-->
+    <declare-styleable name="RatingBar">
+        <!--尺寸值-->
+        <attr name="starImageSize" format="dimension" />
+        <!--星星间距-->
+        <attr name="starPadding" format="dimension" />
+        <!--星星总数-->
+        <attr name="starCount" format="integer" />
+        <!--空白的星星资源文件值-->
+        <attr name="starEmpty" format="reference" />
+        <!--满星资源文件值-->
+        <attr name="starFill" format="reference" />
+        <!--半星资源文件值-->
+        <attr name="starHalf" format="reference" />
+        <!--是否可点击boolean值-->
+        <attr name="clickable" format="boolean" />
+        <!--当前进度float值-->
+        <attr name="starStep" format="float" />
+        <!--每次进度方式的值，整星还是半星-->
+        <attr name="stepSize">
+            <enum name="Half" value="0" />
+            <enum name="Full" value="1" />
+        </attr>
+    </declare-styleable>
+
+    <!--圆角/圆形 图片-->
+    <declare-styleable name="RoundedImageView">
+        <attr name="corner_radius" format="dimension"/><!--边缘的弧度数-->
+        <attr name="border_width_img" format="dimension"/><!--描边的宽度-->
+        <attr name="border_color_img" format="color"/><!--描边的颜色-->
+        <attr name="mutate_background" format="boolean"/><!--背景是否变化-->
+        <attr name="oval" format="boolean"/><!--是否为圆形-->
+        <attr name="android:scaleType"/><!--拉伸的方式-->
+    </declare-styleable>
+
+    <!--搜索历史(流式布局)-->
+    <declare-styleable name="FlowLayout">
+        <attr name="horizontalSpacing" format="dimension" />
+        <attr name="verticalSpacing" format="dimension" />
+        <attr name="itemSize" format="dimension" />
+        <attr name="itemColor" format="color" />
+        <attr name="backgroundResource" format="reference" />
+        <attr name="textPaddingH" format="dimension" />
+        <attr name="textPaddingV" format="dimension" />
+    </declare-styleable>
+</resources>

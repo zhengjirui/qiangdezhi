@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/title_bg"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="找券"
+            android:textColor="#FF800A"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="185dp"
+                android:background="@drawable/soufanli_guanggaotu">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/soufanli_sousuo_beijing"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="7dp"
+                        android:src="@drawable/soufanli_sousuo" />
+
+                    <com.lechuang.jiabin.view.defineView.ClearEditText
+                        android:id="@+id/et_content"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:ellipsize="end"
+                        android:hint="输入商品名或粘贴淘宝标题 最高省90%"
+                        android:singleLine="true"
+                        android:textColor="#ababab"
+                        android:textColorHint="#ababab"
+                        android:textCursorDrawable="@drawable/cursor_main_color"
+                        android:textSize="11sp" />
+
+                    <TextView
+                        android:id="@+id/tv_search"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/soufanli_sousuo_anniu"
+                        android:gravity="center"
+                        android:textColor="@color/white" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:background="@color/c_FFA100"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="42dp"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="25dp"
+                    android:text="3步轻松找券"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    />
+
+                <ImageView
+                    android:id="@+id/iv_checkbox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:paddingRight="20dp"
+                    android:paddingLeft="5dp"
+                    android:src="@drawable/ic_ticket_show"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="(点击查看找券教程)"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/iv_checkbox"
+                    android:textColor="@color/c_4B4746"
+                    android:textSize="12sp"
+                    />
+            </RelativeLayout>
+
+
+            <ImageView
+                android:id="@+id/iv_ticket_step"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:scaleType="center"
+                android:src="@drawable/ic_ticket_step" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

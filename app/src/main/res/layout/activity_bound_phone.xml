@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main"
+    android:fitsSystemWindows="true"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:id="@+id/iv_bound_back"
+            style="@style/Button_Style_0"
+            android:layout_centerVertical="true"
+            android:onClick="finish"
+            android:scaleType="center"
+            android:src="@drawable/huiyuan_fanhui" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="绑定手机号"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="54dp"
+                android:layout_marginRight="54dp"
+                android:layout_marginTop="140dp"
+                android:background="@drawable/bg_login_area_white"
+                android:gravity="center"
+                android:orientation="vertical">
+
+
+                <com.lechuang.jiabin.view.defineView.ClearEditText
+                    android:id="@+id/et_phonenum"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center_vertical"
+                    android:background="@null"
+                    android:hint="请输入手机号"
+                    android:paddingLeft="13dp"
+                    android:phoneNumber="true"
+                    android:textColor="@color/c_969696"
+                    android:textCursorDrawable="@drawable/cursor_main_color"
+                    android:textColorHint="@color/c_737373"
+                    android:textSize="12sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center_vertical">
+
+                    <com.lechuang.jiabin.view.defineView.ClearEditText
+                        android:id="@+id/et_proving"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:hint="请输入验证码"
+                        android:textColor="@color/c_969696"
+                        android:textCursorDrawable="@drawable/cursor_main_color"
+                        android:textColorHint="@color/c_737373"
+                        android:paddingLeft="13dp"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/tv_code"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="12dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/btn_code_bg"
+                        android:padding="5dp"
+                        android:gravity="center"
+                        android:text="获取验证码"
+                        android:textColor="@color/c979797"
+                        android:textSize="9sp" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_ok"
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                android:layout_marginLeft="56dp"
+                android:layout_marginRight="56dp"
+                android:layout_marginTop="56dp"
+                android:background="@drawable/bg_login_area_white"
+                android:text="确定"
+                android:textColor="@color/c_F94A4A"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

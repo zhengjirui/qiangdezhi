@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_title" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/wode_lingqujifen_banner" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:layout_margin="13dp"
+                android:background="@drawable/soufanli_sousuo_beijing"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/soufanli_sousuo" />
+
+                <EditText
+                    android:id="@+id/et_orderNum"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:singleLine="true"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:textSize="13sp"
+                    android:hint="输入淘宝/天猫订单编号"
+                    android:textColor="@color/black" />
+
+                <ImageView
+                    android:id="@+id/iv_get"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/wode_lingqujifen_lingqu"
+                    android:gravity="center"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="13dp"
+                android:layout_marginRight="13dp"
+                android:textColor="@color/c_606060"
+                android:text="*请去淘宝复制订单编号，即可领取积分，兑换成功后在我的收益里查看"
+                android:textSize="10sp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="36dp"
+                android:src="@drawable/jifenshuoming" />
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

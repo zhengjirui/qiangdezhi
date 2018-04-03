@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white">
+
+
+        <!-- android:onClick="finish"-->
+        <ImageView
+            android:id="@+id/iv_back"
+            style="@style/Button_Style_0"
+            android:layout_gravity="center|left"
+            android:scaleType="center"
+            android:onClick="finish"
+            android:src="@drawable/yu_fanhui" />
+
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="70dp"
+            android:layout_marginRight="70dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="#5d5d5d"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/iv_right"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:padding="5dp"
+            android:layout_marginRight="10dp"
+            android:drawablePadding="5dp"
+            android:layout_gravity="right|center_vertical"
+            android:drawableLeft="@drawable/shangpingxiangqing_fenxiang1"
+            android:textColor="@color/main"
+            android:text="赚赏金"/>
+
+
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_gravity="bottom"
+            android:background="@color/rgb_eee" />
+
+
+    </FrameLayout>
+
+
+    <com.lechuang.jiabin.view.defineView.ProgressWebView
+        android:id="@+id/web_product"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

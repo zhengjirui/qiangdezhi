@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+<LinearLayout
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:background="@color/main"
+    android:layout_height="50dp">
+
+    <ImageView
+        android:id="@+id/iv_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="14dp"
+        android:onClick="finish"
+        android:src="@drawable/sousuo_fanhui" />
+    <LinearLayout
+        android:id="@+id/ll_search"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="28dp"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/editsharp"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/icon_sousuo" />
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="@string/editshopname"
+            android:lines="1"
+            android:textColor="@color/rgb_b8b8b8"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_wenhao"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/wenhao" />
+</LinearLayout>
+
+
+    <FrameLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <include
+            layout="@layout/activity_error"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/ll_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/tablayout_get"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:tabIndicatorColor="@color/c_F94A4A"
+                app:tabIndicatorHeight="3dp"
+                android:background="@color/white"
+                app:tabSelectedTextColor="@color/c_F94A4A"
+                app:tabTextColor="@color/c676767" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/rgb_eee"/>
+
+
+            <android.support.v4.view.ViewPager
+                android:layout_weight="1"
+                android:id="@+id/vp_get"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+
+            </android.support.v4.view.ViewPager>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>
